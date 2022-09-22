@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div,
+form,
+a,
+p,
+ul,
+li,
+span,
+button,
+input {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 0.694vw; // при разрешении 1440 px  font-size = 10px, как в макете
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: $font-h;
+    line-height: 180%;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+p {
+    font-size: $font-p;
+    line-height: 110%;
+    font-weight: 400;
+}
+
+img {
+    width: auto;
+}

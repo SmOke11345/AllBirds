@@ -1,0 +1,89 @@
+@import "./_variables.scss";
+@import "./_normalize.scss";
+
+.container {
+    width: 124rem;
+    margin: 0 auto;
+}
+
+// header
+
+.header {
+    padding: 1.5rem 2.7rem;
+    .container {
+        width: auto;
+    }
+    .wrapper-header {
+        @extend %wrapper;
+        align-items: center;
+        &__links {
+            @extend %wrapper;
+            .wrapper-links {
+                @extend %wrapper;
+                align-items: center;
+                width: 10.4rem;
+            }
+            .wrapper-links.right {
+                width: 18.4rem;
+            }
+        }
+        &__logo {
+            margin-left: 22rem;
+            img {
+                width: 12rem;
+            }
+        }
+    }
+    .wrapper-user {
+        margin-left: 3rem;
+        .user-space {
+            @extend %wrapper;
+            align-items: center;
+            width: 11.8rem;
+        }
+        .profile {
+            a img {
+                width: 2.5rem;
+            }
+        }
+    }
+    .links {
+        a p {
+            text-transform: uppercase;
+            font-size: calc($font-p - 0.4rem);
+        }
+    }
+}
+
+// hero
+
+.hero {
+    background: url(../img/hero--background.svg) no-repeat;
+    background-size: contain;
+    min-height: 74rem;
+    .wrapper-hero {
+        text-align: center;
+        color: #ffffff;
+        padding-top: 26.1rem;
+    }
+    &__title h1 {
+        font-size: calc($font-h + 1.6rem);
+    }
+    .wrapper-btns {
+        @extend %wrapper;
+        margin: auto;
+        width: 38.4rem;
+        padding-top: 20.7rem;
+    }
+    &__btn {
+        a p {
+            background-color: #ffffff;
+            padding: 1.7rem 4.5rem;
+        }
+    }
+    &__btn.women {
+        a p {
+            padding: 1.7rem 3.2rem;
+        }
+    }
+}
