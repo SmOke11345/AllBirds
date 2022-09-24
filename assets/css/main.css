@@ -1,4 +1,4 @@
-.hero .wrapper-btns, .header .wrapper-user .user-space, .header .wrapper-header__links .wrapper-links, .header .wrapper-header__links, .header .wrapper-header {
+.wrapper-content, .selector__wrapper, .hero .wrapper-btns, .header .wrapper-user .user-space, .header .wrapper-header__links .wrapper-links, .header .wrapper-header__links, .header .wrapper-header {
   display: flex;
   justify-content: space-between;
 }
@@ -121,6 +121,96 @@ img {
 }
 .hero__btn.women a p {
   padding: 1.7rem 3.2rem;
+}
+
+.title h2 {
+  text-align: center;
+  padding-top: 12rem;
+}
+
+.selector {
+  margin-top: 6.2rem;
+  border-bottom: 0.2rem solid #d3d4d5;
+  position: relative;
+}
+.selector__wrapper {
+  width: 54rem;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: -4rem;
+}
+.selector__wrapper .select p {
+  text-transform: uppercase;
+  line-height: 2.5em;
+  letter-spacing: 0.2rem;
+  width: 12.3rem;
+  text-align: center;
+}
+.selector__wrapper .select p:hover {
+  border-bottom: 0.2rem solid #000000;
+}
+
+.wrapper-content {
+  margin-top: 3.4rem;
+}
+
+.item {
+  min-height: 51.3rem;
+  width: 39.6rem;
+}
+.item__background-img {
+  background: url(../img/favorites--img1.svg) no-repeat;
+}
+.item__background-img.second {
+  background: url(../img/favorites--img2.svg) no-repeat;
+  min-height: 39.8rem;
+}
+.item__background-img.empty {
+  background: url(../img/favorites--img3.svg) no-repeat;
+}
+.item__background-img, .item__background-img.second, .item__background-img.empty {
+  background-size: cover;
+}
+.item__btns {
+  padding: 14.4rem 5rem;
+}
+.item__btns .btn {
+  padding: 1.7rem 9rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.item__btns .btn p {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.item__btns .btn:last-child {
+  margin-top: 1.2rem;
+}
+.item__wrapper-discr {
+  margin: 1rem 3rem;
+}
+.item__wrapper-discr .title {
+  border-bottom: 0.2rem solid #d3d4d5;
+}
+.item__wrapper-discr .title h3 {
+  font-size: 2.2rem;
+}
+.item__wrapper-discr .subtitle {
+  background: url(../img/favorites--subtitle-img1.png) no-repeat left;
+  background-size: contain;
+  margin-top: 0.8rem;
+}
+.item__wrapper-discr .subtitle p {
+  margin-left: 4rem;
+  font-size: 1.4rem;
+  line-height: 2em;
+}
+.item__wrapper-discr .subtitle.another {
+  background: url(../img/favorites--subtitle-img2.png) no-repeat left;
 }
 
 /*# sourceMappingURL=main.css.map */

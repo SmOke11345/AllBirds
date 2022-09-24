@@ -87,3 +87,99 @@
         }
     }
 }
+
+// favorites
+
+.title h2 {
+    text-align: center;
+    padding-top: 12rem;
+}
+
+.selector {
+    margin-top: 6.2rem;
+    border-bottom: 0.2rem solid #d3d4d5;
+    position: relative;
+    &__wrapper {
+        width: 54rem;
+        @extend %wrapper;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -4rem;
+        .select p {
+            text-transform: uppercase;
+            line-height: 2.5em;
+            letter-spacing: 0.2rem;
+            width: 12.3rem;
+            text-align: center;
+            &:hover {
+                border-bottom: 0.2rem solid #000000;
+            }
+        }
+    }
+}
+
+.wrapper-content {
+    @extend %wrapper;
+    margin-top: 3.4rem;
+}
+
+.item {
+    min-height: 51.3rem;
+    width: 39.6rem;
+    &__background-img {
+        background: url(../img/favorites--img1.svg) no-repeat;
+    }
+    &__background-img.second {
+        background: url(../img/favorites--img2.svg) no-repeat;
+        min-height: 39.8rem;
+    }
+    &__background-img.empty {
+        background: url(../img/favorites--img3.svg) no-repeat;
+    }
+    &__background-img,
+    &__background-img.second,
+    &__background-img.empty {
+        background-size: cover;
+    }
+    &__btns {
+        padding: 14.4rem 5rem;
+        .btn {
+            padding: 1.7rem 9rem;
+            background-color: #ffffff;
+            cursor: pointer;
+            p {
+                text-align: center;
+                font-size: calc($font-p - 0.2rem);
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+            }
+            &:last-child {
+                margin-top: 1.2rem;
+            }
+        }
+    }
+    &__wrapper-discr {
+        margin: 1rem 3rem;
+        .title {
+            border-bottom: 0.2rem solid #d3d4d5;
+            h3 {
+                font-size: calc($font-h - 1rem);
+            }
+        }
+        .subtitle {
+            background: url(../img/favorites--subtitle-img1.png) no-repeat left;
+            background-size: contain;
+            margin-top: 0.8rem;
+            p {
+                margin-left: 4rem;
+                font-size: calc($font-p - 0.2rem);
+                line-height: 2em;
+            }
+        }
+        .subtitle.another {
+            background: url(../img/favorites--subtitle-img2.png) no-repeat left;
+        }
+    }
+}
