@@ -147,8 +147,9 @@ img {
   letter-spacing: 0.2rem;
   width: 12.3rem;
   text-align: center;
+  cursor: pointer;
 }
-.selector__wrapper .select p:hover {
+.selector__wrapper .select.active {
   border-bottom: 0.2rem solid #000000;
 }
 

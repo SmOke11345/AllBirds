@@ -113,9 +113,10 @@
             letter-spacing: 0.2rem;
             width: 12.3rem;
             text-align: center;
-            &:hover {
-                border-bottom: 0.2rem solid #000000;
-            }
+            cursor: pointer;
+        }
+        .select.active {
+            border-bottom: 0.2rem solid #000000;
         }
     }
 }
