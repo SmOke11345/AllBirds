@@ -1,4 +1,4 @@
-.wrapper-content, .selector__wrapper, .hero .wrapper-btns, .header .wrapper-user .user-space, .header .wrapper-header__links .wrapper-links, .header .wrapper-header__links, .header .wrapper-header {
+.performance .discription .btns, .wrapper-content, .selector__wrapper, .hero .wrapper-btns, .header .wrapper-user .user-space, .header .wrapper-header__links .wrapper-links, .header .wrapper-header__links, .header .wrapper-header {
   display: flex;
   justify-content: space-between;
 }
@@ -141,7 +141,7 @@ img {
   left: 0;
   top: -4rem;
 }
-.selector__wrapper .select p {
+.selector__wrapper .select a p {
   text-transform: uppercase;
   line-height: 2.5em;
   letter-spacing: 0.2rem;
@@ -153,8 +153,20 @@ img {
   border-bottom: 0.2rem solid #000000;
 }
 
+.nowrap {
+  white-space: nowrap;
+  overflow-x: auto;
+  display: flex;
+}
+
 .wrapper-content {
   margin-top: 3.4rem;
+  column-gap: 2rem;
+}
+
+.wrapper-content.indent {
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .item {
@@ -174,23 +186,6 @@ img {
 .item__background-img, .item__background-img.second, .item__background-img.empty {
   background-size: cover;
 }
-.item__btns {
-  padding: 14.4rem 5rem;
-}
-.item__btns .btn {
-  padding: 1.7rem 9rem;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-.item__btns .btn p {
-  text-align: center;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-}
-.item__btns .btn:last-child {
-  margin-top: 1.2rem;
-}
 .item__wrapper-discr {
   margin: 1rem 3rem;
 }
@@ -202,7 +197,6 @@ img {
 }
 .item__wrapper-discr .subtitle {
   background: url(../img/favorites--subtitle-img1.png) no-repeat left;
-  background-size: contain;
   margin-top: 0.8rem;
 }
 .item__wrapper-discr .subtitle p {
@@ -212,6 +206,62 @@ img {
 }
 .item__wrapper-discr .subtitle.another {
   background: url(../img/favorites--subtitle-img2.png) no-repeat left;
+}
+.item__wrapper-discr .subtitle,
+.item__wrapper-discr .subtitle.another {
+  background-size: contain;
+}
+
+.btns {
+  padding: 14.4rem 5rem;
+}
+.btns .btn {
+  padding: 1.7rem 9rem;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.btns .btn p {
+  text-align: center;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.btns .btn:last-child {
+  margin-top: 1.2rem;
+}
+
+.performance .container {
+  width: 100%;
+}
+.performance .wrapper-performance {
+  margin-top: 12rem;
+}
+.performance .wrapper-background {
+  background: url(../img/performance--img1.svg) left center;
+  background-size: cover;
+  min-height: 54.2rem;
+}
+.performance .discription {
+  width: 38.4rem;
+  margin: 5rem auto 12rem;
+  text-align: center;
+}
+.performance .discription__subtitle {
+  margin-top: 1rem;
+}
+.performance .discription .btns {
+  padding: 3rem 0 0 0;
+}
+.performance .discription .btns .btn {
+  padding: 1.7rem 4rem;
+  border-radius: 0.2rem;
+  background-color: #212a2f;
+}
+.performance .discription .btns .btn p {
+  color: #ffffff;
+}
+.performance .discription .btns .btn:last-child {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

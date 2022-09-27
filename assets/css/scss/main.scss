@@ -107,7 +107,7 @@
         right: 0;
         left: 0;
         top: -4rem;
-        .select p {
+        .select a p {
             text-transform: uppercase;
             line-height: 2.5em;
             letter-spacing: 0.2rem;
@@ -121,9 +121,19 @@
     }
 }
 
+.nowrap {
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+}
 .wrapper-content {
     @extend %wrapper;
     margin-top: 3.4rem;
+    column-gap: 2rem;
+}
+.wrapper-content.indent {
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .item {
@@ -144,23 +154,6 @@
     &__background-img.empty {
         background-size: cover;
     }
-    &__btns {
-        padding: 14.4rem 5rem;
-        .btn {
-            padding: 1.7rem 9rem;
-            background-color: #ffffff;
-            cursor: pointer;
-            p {
-                text-align: center;
-                font-size: calc($font-p - 0.2rem);
-                text-transform: uppercase;
-                letter-spacing: 0.2rem;
-            }
-            &:last-child {
-                margin-top: 1.2rem;
-            }
-        }
-    }
     &__wrapper-discr {
         margin: 1rem 3rem;
         .title {
@@ -171,7 +164,6 @@
         }
         .subtitle {
             background: url(../img/favorites--subtitle-img1.png) no-repeat left;
-            background-size: contain;
             margin-top: 0.8rem;
             p {
                 margin-left: 4rem;
@@ -181,6 +173,66 @@
         }
         .subtitle.another {
             background: url(../img/favorites--subtitle-img2.png) no-repeat left;
+        }
+        .subtitle,
+        .subtitle.another {
+            background-size: contain;
+        }
+    }
+}
+.btns {
+    padding: 14.4rem 5rem;
+    .btn {
+        padding: 1.7rem 9rem;
+        background-color: #ffffff;
+        cursor: pointer;
+        p {
+            text-align: center;
+            font-size: calc($font-p - 0.2rem);
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+        }
+        &:last-child {
+            margin-top: 1.2rem;
+        }
+    }
+}
+
+// perfomanse
+
+.performance {
+    .container {
+        width: 100%;
+    }
+    .wrapper-performance {
+        margin-top: 12rem;
+    }
+    .wrapper-background {
+        background: url(../img/performance--img1.svg) left center;
+        background-size: cover;
+        min-height: 54.2rem;
+    }
+    .discription {
+        width: 38.4rem;
+        margin: 5rem auto 12rem;
+        text-align: center;
+        &__subtitle {
+            margin-top: 1rem;
+        }
+        .btns {
+            padding: 3rem 0 0 0;
+            @extend %wrapper;
+            .btn {
+                padding: 1.7rem 4rem;
+                border-radius: 0.2rem;
+                background-color: $color;
+                p {
+                    color: #ffffff;
+                }
+                &:last-child {
+                    margin-top: 0;
+                }
+            }
         }
     }
 }
