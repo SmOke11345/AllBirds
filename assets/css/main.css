@@ -155,13 +155,14 @@ img {
 
 .nowrap {
   white-space: nowrap;
-  overflow-x: auto;
+  overflow-x: hidden;
   display: flex;
 }
 
 .wrapper-content {
   margin-top: 3.4rem;
   column-gap: 2rem;
+  position: relative;
 }
 
 .wrapper-content.indent {
