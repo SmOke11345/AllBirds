@@ -165,14 +165,9 @@ img {
   position: relative;
 }
 
-.wrapper-content.indent {
-  margin-right: 2rem;
-  margin-left: 2rem;
-}
-
 .item {
   min-height: 51.3rem;
-  width: 39.6rem;
+  width: 40.6rem;
 }
 .item__background-img {
   background: url(../img/favorites--img1.svg) no-repeat;
