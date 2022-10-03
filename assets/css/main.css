@@ -226,16 +226,23 @@ img {
   margin-top: 1.2rem;
 }
 
-.performance .container {
-  width: 100%;
-}
 .performance .wrapper-performance {
   margin-top: 12rem;
 }
 .performance .wrapper-background {
-  background: url(../img/performance--img1.svg) left center;
-  background-size: cover;
+  background: url(../img/performance--img1.svg);
   min-height: 54.2rem;
+}
+.performance .wrapper-background.second {
+  background: url(../img/performance--img2.svg);
+}
+.performance .wrapper-background.empty {
+  background: url(../img/performance--img3.svg);
+}
+.performance .wrapper-background,
+.performance .wrapper-background.second,
+.performance .wrapper-background.empty {
+  background-size: cover;
 }
 .performance .discription {
   width: 38.4rem;
@@ -258,6 +265,50 @@ img {
 }
 .performance .discription .btns .btn:last-child {
   margin-top: 0;
+}
+.performance .discription.different {
+  width: 65.5rem;
+}
+.performance .discription.different .btns.different {
+  width: 38.4rem;
+  margin: auto;
+  display: block;
+}
+.performance .discription.different:last-child {
+  width: 62.4rem;
+}
+
+.performance > .container,
+.shop-carousel > .container {
+  width: 100%;
+}
+
+.carousel .owl-item {
+  margin-left: 2.4rem;
+}
+.carousel .owl-item .wrapper-content {
+  display: flex;
+  flex-direction: column;
+}
+.carousel__title {
+  margin-left: 14rem;
+}
+.carousel__subtitle {
+  padding: 1.7rem 1.9rem;
+}
+.carousel__subtitle p {
+  font-size: 2.2rem;
+}
+.carousel__img {
+  min-height: 39.6rem;
+}
+
+.owl-carousel.owl-stage {
+  min-height: 46.1rem;
+}
+
+.owl-carousel .owl-stage-outer {
+  min-height: 57rem;
 }
 
 /*# sourceMappingURL=main.css.map */
