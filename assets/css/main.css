@@ -297,11 +297,14 @@ img {
   flex-direction: column;
   width: 39.4rem;
 }
-.carousel__subtitle {
-  padding: 1.7rem 1.9rem;
+.carousel__title p {
+  font-size: 2.2rem;
 }
 .carousel__subtitle p {
-  font-size: 2.2rem;
+  margin-top: 0.8rem;
+}
+.carousel .wrapper-discrip {
+  padding: 1.7rem 1.9rem;
 }
 
 .owl-carousel .owl-nav button.owl-next,

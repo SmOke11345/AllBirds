@@ -276,11 +276,14 @@
             width: 39.4rem;
         }
     }
-    &__subtitle {
+    &__title p {
+        font-size: calc($font-p + 0.6rem);
+    }
+    &__subtitle p {
+        margin-top: 0.8rem;
+    }
+    .wrapper-discrip {
         padding: 1.7rem 1.9rem;
-        p {
-            font-size: calc($font-p + 0.6rem);
-        }
     }
 }
 
