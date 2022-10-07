@@ -278,20 +278,24 @@ img {
   width: 62.4rem;
 }
 
-.performance > .container,
-.shop-carousel > .container {
+.performance > .container {
   width: 100%;
 }
 
+.shop-carousel > .container {
+  width: 133rem;
+  margin-left: 9rem;
+  overflow-x: hidden;
+}
+
 .carousel .owl-item {
-  margin-left: 2.4rem;
+  width: 39.4rem !important;
+  margin-right: 2.4rem;
 }
 .carousel .owl-item .wrapper-content {
   display: flex;
   flex-direction: column;
-}
-.carousel__title {
-  margin-left: 14rem;
+  width: 39.4rem;
 }
 .carousel__subtitle {
   padding: 1.7rem 1.9rem;
@@ -299,16 +303,25 @@ img {
 .carousel__subtitle p {
   font-size: 2.2rem;
 }
-.carousel__img {
-  min-height: 39.6rem;
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  width: 4.8rem !important;
+  opacity: 0;
+  transition: ease-in-out 0.2s;
 }
 
-.owl-carousel.owl-stage {
-  min-height: 46.1rem;
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none !important;
+  opacity: 1;
 }
 
-.owl-carousel .owl-stage-outer {
-  min-height: 57rem;
+.owl-theme .owl-nav {
+  width: 130rem;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -18,8 +18,10 @@ for (var i = 0; i < select.length; i++) {
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         nav: true,
-        loop: true,
+        navText: ["<img src='./assets/img/shop-carousel/arrow-prev.png'>", "<img src='./assets/img/shop-carousel/arrow-next.png'>"],
+        loop: false,
         items: 3,
+        margin: 0,
         dots: false,
     });
 });
