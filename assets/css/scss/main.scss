@@ -109,7 +109,7 @@
         top: -4rem;
         .select a p {
             text-transform: uppercase;
-            line-height: 2.5em;
+            line-height: 250%;
             letter-spacing: 0.2rem;
             width: 12.3rem;
             text-align: center;
@@ -129,7 +129,7 @@
 
 .wrapper-content {
     @extend %wrapper;
-    margin-top: 3.4rem;
+    margin-top: 1.4rem;
     column-gap: 2rem;
     position: relative;
 }
@@ -156,9 +156,6 @@
         margin: 1rem 3rem;
         .title {
             border-bottom: 0.2rem solid #d3d4d5;
-            h3 {
-                font-size: calc($font-h - 1rem);
-            }
         }
         .subtitle {
             background: url(../img/favorites--subtitle-img1.png) no-repeat left;
@@ -166,7 +163,7 @@
             p {
                 margin-left: 4rem;
                 font-size: calc($font-p - 0.2rem);
-                line-height: 2em;
+                line-height: 200%;
             }
         }
         .subtitle.another {
@@ -177,6 +174,9 @@
             background-size: contain;
         }
     }
+}
+.title h3 {
+    font-size: calc($font-h - 1rem);
 }
 .btns {
     padding: 14.4rem 5rem;
@@ -276,9 +276,6 @@
             width: 39.4rem;
         }
     }
-    &__title p {
-        font-size: calc($font-p + 0.6rem);
-    }
     &__subtitle p {
         margin-top: 0.8rem;
     }
@@ -303,4 +300,17 @@
     top: 40%;
     display: flex;
     justify-content: space-between;
+}
+
+// stories
+
+.stories {
+    .item {
+        &__subtitle {
+            width: 35.5rem;
+        }
+    }
+    &__wrap {
+        margin: 1rem 2rem;
+    }
 }

@@ -47,12 +47,12 @@ a {
 
 p {
   font-size: 1.6rem;
-  line-height: 110%;
+  line-height: 130%;
   font-weight: 400;
 }
 
 img {
-  width: auto;
+  width: 100%;
 }
 
 .container {
@@ -143,7 +143,7 @@ img {
 }
 .selector__wrapper .select a p {
   text-transform: uppercase;
-  line-height: 2.5em;
+  line-height: 250%;
   letter-spacing: 0.2rem;
   width: 12.3rem;
   text-align: center;
@@ -160,7 +160,7 @@ img {
 }
 
 .wrapper-content {
-  margin-top: 3.4rem;
+  margin-top: 1.4rem;
   column-gap: 2rem;
   position: relative;
 }
@@ -188,9 +188,6 @@ img {
 .item__wrapper-discr .title {
   border-bottom: 0.2rem solid #d3d4d5;
 }
-.item__wrapper-discr .title h3 {
-  font-size: 2.2rem;
-}
 .item__wrapper-discr .subtitle {
   background: url(../img/favorites--subtitle-img1.png) no-repeat left;
   margin-top: 0.8rem;
@@ -198,7 +195,7 @@ img {
 .item__wrapper-discr .subtitle p {
   margin-left: 4rem;
   font-size: 1.4rem;
-  line-height: 2em;
+  line-height: 200%;
 }
 .item__wrapper-discr .subtitle.another {
   background: url(../img/favorites--subtitle-img2.png) no-repeat left;
@@ -206,6 +203,10 @@ img {
 .item__wrapper-discr .subtitle,
 .item__wrapper-discr .subtitle.another {
   background-size: contain;
+}
+
+.title h3 {
+  font-size: 2.2rem;
 }
 
 .btns {
@@ -297,9 +298,6 @@ img {
   flex-direction: column;
   width: 39.4rem;
 }
-.carousel__title p {
-  font-size: 2.2rem;
-}
 .carousel__subtitle p {
   margin-top: 0.8rem;
 }
@@ -325,6 +323,13 @@ img {
   top: 40%;
   display: flex;
   justify-content: space-between;
+}
+
+.stories .item__subtitle {
+  width: 35.5rem;
+}
+.stories__wrap {
+  margin: 1rem 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
