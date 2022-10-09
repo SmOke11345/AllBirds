@@ -49,3 +49,21 @@ p {
 img {
     width: 100%;
 }
+
+ul li {
+    list-style: none;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 5rem #4d5559 inset;
+    -webkit-text-fill-color: #ffffff;
+}

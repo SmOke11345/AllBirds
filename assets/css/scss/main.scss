@@ -314,3 +314,111 @@
         margin: 1rem 2rem;
     }
 }
+
+// footer
+
+.footer {
+    background-color: $color;
+    padding: 7.2rem 5.4rem;
+    margin-top: 13.4rem;
+    color: #ffffff;
+    letter-spacing: 0.05rem;
+    font-size: calc($font-p - 0.4rem);
+    a {
+        color: #ffffff;
+    }
+    .wrapper-footer-links {
+        margin-top: 7rem;
+        .wrapper-content {
+            margin-right: 45rem;
+            ul li.main p {
+                text-transform: uppercase;
+                margin-bottom: 1.8rem;
+            }
+            ul li:not(:first-child) {
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+    .discrip-form p,
+    ul li.main p,
+    .title p {
+        font-size: calc($font-p - 0.2rem);
+        letter-spacing: 0.2rem;
+    }
+    .wrapper-inf {
+        margin-top: 7rem;
+        @extend %wrapper;
+        .wrapper-content.follow {
+            width: 30rem;
+        }
+        .wrapper-content.last {
+            width: 60.6rem;
+        }
+        .wrapper-content {
+            .title {
+                margin-bottom: 2rem;
+            }
+            .subtitle p {
+                font-size: calc($font-p - 0.4rem);
+                line-height: 150%;
+                margin-bottom: 1rem;
+            }
+            display: flex;
+            flex-direction: column;
+            .links-social {
+                display: flex;
+                .img {
+                    margin-right: 2rem;
+                    width: 1.8rem;
+                }
+            }
+            .logo img {
+                width: 7.8rem;
+            }
+            .language {
+                .language__img {
+                    cursor: pointer;
+                }
+                img {
+                    width: 3.7rem;
+                }
+                img:not(:last-child) {
+                    margin-right: 2.4rem;
+                }
+            }
+        }
+    }
+    .wrapper-reserved {
+        margin-top: 9rem;
+        .reserved p {
+            text-align: center;
+            font-size: calc($font-p - 0.4rem);
+        }
+    }
+}
+
+form {
+    input[type="email"],
+    input[type="submit"] {
+        background-color: #4d5559;
+        border: none;
+        border-radius: 0.1rem;
+        padding: 1.7rem 3rem;
+        font-family: "Roboto", sans-serif;
+        font-size: calc($font-p - 0.4rem);
+        color: #ffffff;
+    }
+    input[type="submit"] {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-left: 1.2rem;
+    }
+    input[type="email"] {
+        border-bottom: 0.2rem solid #ffffff;
+        width: 30.2rem;
+    }
+}
+.discrip-form {
+    margin-bottom: 1rem;
+}
